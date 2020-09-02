@@ -1,0 +1,17 @@
+.header {
+  font-family: Arial, Helvetica, "Times New Roman";
+}
+
+body {
+  background-color: lightblue;
+}
+
+p{
+  font-family: Arial, Helvetica, "Times New Roman";
+}
+
+.images{
+  width: 150px;
+  max-width: 150px;
+  border: 1px solid black;
+}
