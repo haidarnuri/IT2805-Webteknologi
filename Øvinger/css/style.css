@@ -10,8 +10,7 @@ p{
   font-family: Arial, Helvetica, "Times New Roman";
 }
 
-.images{
-  width: 150px;
+img{
   max-width: 150px;
-  border: 1px solid black;
+  border: 5px solid red;
 }
