@@ -1,10 +1,11 @@
 1. What is the difference between position: absolute and position: fixed ?
 
-With the aboslute position it is positioned in relation to it's containing element, but does not affect the position
-of the surronding element. The absolute position moves when the user scrolls up and down the page. 
+With the absolute position it is positioned in relation to it's containing element. This does not affect the position
+of the surronding element.
 
-With thje fixed position the element is positioned in relation to the browswer window. This does not affect the
-positions of the sorrunding elements, and they do not move when scrolling up and down the page. 
+With the fixed position the element is positioned in relation to the browser window. This does not affect the
+positions of the sorrunding elements. 
+
 
 
 2. With CSS3, how do we access the third element within another element?
@@ -15,4 +16,4 @@ p:nth-child(3){
   color: blue;
 }
 
-you get that the third paragraph has blue text. 
+you get that the third paragraph has blue text.
