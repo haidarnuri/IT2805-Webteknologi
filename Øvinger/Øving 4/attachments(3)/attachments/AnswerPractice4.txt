@@ -1,0 +1,23 @@
+1. Why do mobile phones usually ignore auto play on video elements?
+
+Users felt the auto play mode was disruptive and it used a lot of mobile data. 
+
+ 2. What will the CSS snippet at the end of this section do if the visitor is browsing on a
+device with 320 x 568 resolution?
+
+dev-width stands for the number of pixels of the output device. As I read the 
+code a device between 768 px and 1024 px will not display #logo, but a 
+device with resolution 320x568 is not in that range. So most likely a 
+device with 320x568 wil show #logo. 
+
+I feel that the rest of the code is missing, so maybe there is a decision made for that particular resolution somwhere else in the code. 
+
+
+3. Mention some of the advantages of having a single responsive website instead of
+dedicated versions like m.til.no for mobile and til.no for desktop?
+
+A. Responsive sites can support a variety of devices and screen sizes with a single implementation. 
+
+C. Maintaining a separate mobile site requires additional testing and support. Responsive design's "one size fits all" approach means less headache for developers, business owners, and consumers.
+
+D. Making one responsive website takes less time than making a stand-alone mobile application in addition to a standard desktop website.

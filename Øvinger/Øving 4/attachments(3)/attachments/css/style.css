@@ -43,7 +43,7 @@
   }
 
   /*backupImage is the id of the image in index.html*/
-  #backupImage >img{
+  #backupImage>img{
     width: 100%;
   }
 
