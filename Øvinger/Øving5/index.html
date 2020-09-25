@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>IT2805 assignment 5: JavaScript introduction</title>
-
     <style>
       .box{
         /* Sets the size and position of each box */
@@ -33,16 +32,22 @@
 
     <h2>Part 5</h2>
     <div class='buttons'>
-      <button>Display: none </button>
-      <button>Visibility: hidden</button>
-      <button>Reset</button>
+      <button onclick="changeDisplay()">Display: none </button>
+      <button onclick="changeVisibility()">Visibility: hidden</button>
+      <button onclick="reset()">Reset</button>
     </div>
     <div class='box' id='magic'> 1 </div>
     <div class='box'> 2 </div>
-
     <h2>Part 6</h2>
     <ul id='tech'>
     </ul>
+    <script type="text/javascript" src="script.js"></script>
+    <!---
+    It is often recommended to insert the script tag to the js file in the end of the body section.
+    This way the HTML part will load before the JavaScript file. If we in the script tag reference to
+    to an element that occurs aften this tag, the referance could fail.
 
+    If one will use the script tag in the title, then one could use a function called window.onload = function{...}, which will render the DOM before excetuting js file.
+    --->
   </body>
 </html>
