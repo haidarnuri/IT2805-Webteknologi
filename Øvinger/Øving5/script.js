@@ -1,3 +1,5 @@
+window.onload = oppstart;
+function oppstart(){
 /* Part 2 */
 console.log('PART 2')
 for(let i = 1;i<21;i++){
@@ -49,3 +51,5 @@ const technologies = [
     'Bootstrap',
     'Node.js'
 ];
+
+}
