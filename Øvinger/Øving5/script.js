@@ -1,5 +1,3 @@
-window.onload = oppstart;
-function oppstart(){
 /* Part 2 */
 console.log('PART 2')
 for(let i = 1;i<21;i++){
@@ -52,4 +50,9 @@ const technologies = [
     'Node.js'
 ];
 
+for(let i=0;i<technologies.length;i++){
+  let node = document.createElement("LI"); //lager en node
+  let textnode = document.createTextNode(technologies[i]); //lager en tekstnode
+  node.appendChild(textnode); //Legger til tekstnoden til noden
+  document.getElementById("tech").appendChild(node); //Legger noden til listen
 }
