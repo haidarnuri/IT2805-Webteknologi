@@ -1,13 +1,13 @@
 /* Part 2 */
 console.log('PART 2')
-for(let i = 1;i<21;i++){
-  console.log('number '+i);
+for(let i=1;i<=20;i++){
+  console.log(i);
 }
 /* Part 3 */
 console.log('PART 3')
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-for(let i=0;i<numbers.length;i++){
-  let temp = numbers[i];
+for(let j=0;j<numbers.length;j++){
+  let temp = numbers[j];
   if(temp%3===0 && temp%5===0){
     console.log('eplekake');
   }else if(temp%3===0){
@@ -20,6 +20,7 @@ for(let i=0;i<numbers.length;i++){
 }
 /* Part 4 */
 document.getElementById('title').innerText = "Hello JavaScript";
+
 /* Part 5 */
 function changeDisplay () {
   document.getElementById('magic').style.display = "none";
@@ -50,9 +51,8 @@ const technologies = [
     'Node.js'
 ];
 
+let tag = "";
 for(let i=0;i<technologies.length;i++){
-  let node = document.createElement("LI"); //lager en node
-  let textnode = document.createTextNode(technologies[i]); //lager en tekstnode
-  node.appendChild(textnode); //Legger til tekstnoden til noden
-  document.getElementById("tech").appendChild(node); //Legger noden til listen
+  tag += `<li>${technologies[i]}</li>`;
 }
+document.getElementById('tech').innerHTML = tag;
