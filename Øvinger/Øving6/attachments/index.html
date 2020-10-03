@@ -4,6 +4,7 @@
         <title>Tax form</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post">
@@ -18,7 +19,7 @@
             <label for="gender">
               Gender:
             </label>
-            <select name="gender" id="gender">
+            <select name="gender" id="gender" required>
               <option label="Male" value="male"></option>
               <option label="Femal" value="female"></option>
             </select>
@@ -71,9 +72,26 @@
           </div>
 
           <div>
+            <label for="Income" >Income</label>
+            <input type="number" name="income" id="Income" min="0" required>
+          </div>
+
+          <div>
+            <label for="Wealth" >Wealth</label>
+            <input type="number" name="wealth" id="Wealth" min="0" required>
+          </div>
+
+          <div>
+            <label for="Tax">Tax</label><br>
+            <input type="number" name="tax" id="Tax"readonly>
+          </div>
+
+          <div>
             <button type="submit" name="button">Submit Tax Form</button>
           </div>
 
         </form>
+
+        <script src="javascript.js"></script>
     </body>
 </html>
