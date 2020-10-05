@@ -73,23 +73,22 @@
 
           <div>
             <label for="Income" >Income</label>
-            <input type="number" name="income" id="Income" min="0" required>
+            <input type="number" name="income" id="Income" min="0" onchange="taxCalculation()" required>
           </div>
 
           <div>
             <label for="Wealth" >Wealth</label>
-            <input type="number" name="wealth" id="Wealth" min="0" required>
+            <input type="number" name="wealth" id="Wealth" min="0" onchange="taxCalculation()" required>
           </div>
 
           <div>
-            <label for="Tax">Tax</label><br>
+            <label for="Tax">Tax</label>
             <input type="number" name="tax" id="Tax"readonly>
           </div>
 
           <div>
             <button type="submit" name="button">Submit Tax Form</button>
           </div>
-
         </form>
 
         <script src="javascript.js"></script>
