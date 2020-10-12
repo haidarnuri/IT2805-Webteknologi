@@ -29,7 +29,10 @@ The browser sends an empty body. Because the body is empty, if a form is sent us
 4. Why is it considered bad practice to only validate form input with HTML5 and/or
 Javascript?
 
-????????
+Javascript: It is possible to turn of javascript in a browser. If you turn of javascript in the browser the validation with javascript would not work.
+
+HTML: In html you can validate at som level, but maybe not as accurate as you want. For example a mail validation checks if the mailadress contains
+a @ sign, but nothing more. But one should also check if the ending is ".no" or somethings like that. The validation is not on your premises.
 
 --------------------
 
