@@ -1,15 +1,16 @@
 document.getElementById("submitButton").addEventListener("click", addTask);
-let tasks = [];
-let ulTag = document.getElementById("todoList");
-let totalNumberTask = 0;
-let totalCompletedTask =0;
+
+const tasks = [];
+const ulTag = document.getElementById("todoList");
+let numberOfTask = 0;
+let completedTask =0;
 
 function addTask(event){
-    let inputText = document.getElementById("inputField").value;
-    
-    let millisec = new Date();
-    let day  = millisec.getDate();
-    
+    const inputText = document.getElementById("inputField").value;
+
+    const millisec = new Date();
+    const day  = millisec.getDate();
+
     let taskObj =  {
         task : inputText,
         date : day
@@ -17,39 +18,37 @@ function addTask(event){
 
     tasks.push(taskObj);
 
-    //Using String manipulations to create listelements. 
+    //Using String manipulations to create listelements.
     ulTag.style.listStyle="none";
     let tags="";
     for(let i = tasks.length-1; i>=0;i--){
         tags+=`<li><input type="checkbox" id=${i} onclick="addOrRemoveLine(this.id)">${tasks[i].task}</li>`;
-    }   
+    }
     ulTag.innerHTML = tags;
-    event.preventDefault();   
-    totalNumberTask = tasks.length;
-    
-    addToOutputField(totalCompletedTask,totalNumberTask);
+    event.preventDefault();
+    numberOfTask = tasks.length;
+
+    addToOutputField(completedTask,numberOfTask);
+
+    document.getElementById("inputField").value = ""; //clears the field
 }
 
 
 
 function addOrRemoveLine(id){
-    let tempObj = document.getElementById(id);
-    if(tempObj.checked){
-        tempObj.style.textDecoration = "line-through";
-        totalCompletedTask++;
+  //console.log(id);
+    const tempCheckbox = document.getElementById(id);
+    const liElement = tempCheckbox.parentElement;
+    if(tempCheckbox.checked){
+        liElement.style.textDecoration = "line-through";
+        completedTask++;
     }else{
-        tempObj.style.textDecoration = "none";
-        totalCompletedTask--;
+        liElement.style.textDecoration = "none";
+        completedTask--;
     }
-    addToOutputField(totalCompletedTask,totalNumberTask);
+    addToOutputField(completedTask,numberOfTask);
 }
 
 function addToOutputField(numberTask,completeTask){
     document.getElementById("outputField").value = numberTask +"/" +completeTask+" completed";
 }
-
-
-
-
-
-
