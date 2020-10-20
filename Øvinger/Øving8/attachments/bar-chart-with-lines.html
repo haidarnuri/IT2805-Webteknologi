@@ -29,13 +29,13 @@
 
       /* Draw a text and with a line to its right */
       function drawLineWithText(text, fromX, fromY, toX, toY) {
-        drawText(text, fromX - 50, fromY + 10);
+        drawText(text, fromX - 50, fromY+5);
         drawLine(fromX, fromY, toX, toY);
       }
 
       /* Insert your code here. */
-      for (let i = 0; i < 1; i++) {
-        drawLineWithText(100000,100,0,700,0);
+      for (let i = 9; i >= 0; i--) {
+        drawLineWithText(1000000 - 100000*i,100,40*i+40,700,40*i+40);
       }
 
     </script>
