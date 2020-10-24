@@ -45,19 +45,48 @@
       context.fillText("Wealth",665,83);
       
       for (let i = 10; i >= 0; i--) {
-        drawLineWithText(1000000 - 100000*i,100,40*i+40,600,40*i+40);
-        console.log(40*i+40);
+        let y = calculateYPosOnCanvas(1000000 - 100000*i);
+        drawLineWithText(1000000 - 100000*i,100,y,600,y);
+      }
+      
+      let x,y,height;
+      let counter = 0;
+      const width = 40;
+      for(const heroes of taxForms){
+
+        context.fillStyle="red";
+        x = 150*counter+150;
+        y = calculateYPosOnCanvas(heroes.income);
+        height = calculateHeight(y); 
+        context.fillRect(x,y,width,height);
+
+        context.fillStyle="blue";
+        x+=width+5;
+        y = calculateYPosOnCanvas(heroes.wealth);
+        height = calculateHeight(y); 
+        context.fillRect(x,y,width,height);
+
+        counter++;
+    }
+        
+      function calculateYPosOnCanvas(moneyValue){
+        let stepsFromTop = 10 - (moneyValue/100000);
+        let yPos = 40*(stepsFromTop + 1);
+        return yPos; 
       }
 
-      for (const obj of taxForms) {
+      function calculateHeight(yValue){
+        let temp = 440-yValue;
+        return temp;
+      }
+
+
+
+
+      /*for (const obj of taxForms) {
         let income = obj.income;
         let wealth = obj.wealth;
-
-
-
-
-
-      }
+      }*/
 
     </script>
   </body>
