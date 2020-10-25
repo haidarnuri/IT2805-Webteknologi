@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
   <head>
     <title>Tax forms: Bar chart with lines</title>
     <meta charset="UTF-8">
@@ -44,16 +44,17 @@
       context.fillStyle = "black";
       context.fillText("Wealth",665,83);
       
-      for (let i = 10; i >= 0; i--) {
-        let y = calculateYPosOnCanvas(1000000 - 100000*i);
+      let x,y,height;
+
+      for (let i = 9; i >= 0; i--) {
+        y = calculateYPosOnCanvas(1000000 - 100000*i);
         drawLineWithText(1000000 - 100000*i,100,y,600,y);
       }
       
-      let x,y,height;
+      
       let counter = 0;
       const width = 40;
       for(const heroes of taxForms){
-
         context.fillStyle="red";
         x = 150*counter+150;
         y = calculateYPosOnCanvas(heroes.income);
@@ -76,8 +77,7 @@
       }
 
       function calculateHeight(yValue){
-        let temp = 440-yValue;
-        return temp;
+        return 440-yValue;
       }
 
 
