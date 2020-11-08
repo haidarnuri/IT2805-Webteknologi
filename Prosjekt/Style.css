@@ -1,0 +1,60 @@
+body{
+  font-size: 20px;
+  background: silver;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  left: 25%;
+
+}
+
+p {
+  margin-left: 10px;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+
+h3 {
+  margin-left: 10px;
+}
+
+img {
+  margin-left: 25%;
+}
+
+.main{
+  position: absolute;
+  left: 25%;
+}
+
+
+.child{
+  border-style: solid;
+  
+  margin-top: 20px;
+  width: 800px;
+  border-width: 2px;
+}
+
+.avsnitt{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+
+
+table,th,td{
+  border: 1px solid black;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Heaven</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header id="headerWrap">
+    </header>
+
+    <div id="headerReservation">
+          <h1>Velg antall gjester</h1>
+    </div>
+
+    <div id="reservationWrapper">
+    </div>
+
+    <div id="headerCalender">
+      <h1>Velg en dato</h1>
+    </div>
+
+    <div class="calenderWrapper" >
+    </div>
+
+    <div id="headerTime">
+        <h1>Velg et tidspunkt</h1>
+    </div>
+
+    <div class="timeWrapper" >
+    </div>
+
+    <div id="headerForm">
+      <h1>Kontaktinformasjon</h1>
+          <form class="form" id="form" onsubmit="return validateForm();">
+            <div class="form-control">
+              <label>Fornavn</label>
+              <input type="text" placeholder="Ola" id="fornavn">
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label>Etternavn</label>
+              <input type="text" placeholder="Nordmann" id="navn">
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label>Epost</label>
+              <input type="email" placeholder="olaNordmann@hotmail.com" id="epost">
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label>Mobilnr</label>
+              <input type="text" placeholder="12345678" id="mobilnr">
+              <small>Error message</small>
+            </div>
+
+            <div class="submitButton">
+              <input type="submit">
+            </div>
+          </form>
+        </div>
+
+    <div  id="footerWrapOmOss">
+    </div>
+
+    <!--- Javascript  -->
+    <script src="javascript/footer.js"></script>
+    <script src="javascript/form.js"></script>
+    <script src="javascript/calenderJavascript.js"></script>
+    <script src="javascript/navbar.js"></script>
+  </body>
+</html>

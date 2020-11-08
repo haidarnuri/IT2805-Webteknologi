@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>P3_gruppe18</title>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <a href="index.html">Tilbake til hovedsiden</a>
+    <div class="main">
+      <h1>P3 prosjekt - IT2805</h1>
+      <div class="child">
+        <h2>1. Dokument Detaljer</h2>
+        <p>
+         P3_changes
+        </p>
+        <p>
+          Hedda, Haidar, Ole og Simen
+        </p>
+        <p>
+          IT2805 november 2020
+        </p>
+      </div>
+
+      <div class="child">
+        <h2>2. Administrerende detaljer</h2>
+        <p>
+          Klient: Heaven Resturant
+        </p>
+        <p>
+          Navn på nettsiden: heaven-resturant
+        </p>
+        <p>
+          Kontakt person: Ola Nordmann
+        </p>
+        <p>
+          link til nettsiden vår: <a href="Nettside/forside.html">klikk her</a>
+        </p>
+      </div>
+
+      <div class="child">
+        <h2>3. Våre endringer</h2>
+        <p>
+          <b>Endringer generelt:</b> <br>
+          På P2 missforsto vi hva som mentes med å beskrive utseende på nettsiden. Vi skrev derfor veldig detaljert hvordan nettsiden skulle se ut,
+          både ved å konkret beskrive størrelse på bilder i px, margins og generelt hvordan elementer på nettsiden skulle være/se ut.
+          Fordi vi var så konkrete på P2 før vi hadde lagd nettsiden og sett hvordan den fungerte i praksis, så har vi måtte gått bort fra å følge
+          beskrivelsene fra P2 til detalj. Vi vil derfor ikke inkludere absolutt alle endringer vi har gjort fra P2 fordi det blir for detaljstyrt og
+          omfattende.
+          <br><br>
+          Vi har endret stil på footeren. Vi har gjort den litt "enklere", ved å ta bort blåfargen og fjernet boksene rundt teksten. Denne footeren er med i alle sidene.
+          Årsaken til at vi fjernet blåfargen er at det gjorde hele nettsiden mer behagelig å se på. Grunnen til å fjerne boksene rundt teksten var for å redusere visuelt
+          støy, noe som både gjør footeren estetisk samtidig som det øker brukervennlighet.
+        </p>
+        <p>
+         <b>Endringer på forsiden: </b> <br>
+         Istedenfor et bilde rett under navbaren, så har vi lagt inn en slider med ulike bilder som skiftes ut hvert femte sekund. Scriptet i slideren er skrevet i imageCarousel.js.
+         Dette gjorde vi for at gjestene skal bli møtt med en mer levende side. Ved å ha en gjevnlig rullering av bildene får gjestene et større innblikk i hva restauranten
+         serverer samtidig som forsiden blir oppfattet som mer spennende. I tillegg er det en implimentert javascriptfunksjon som er med på å møte minstekravet.
+         <br><br>
+        På nederste del av forsiden er det et bilde med en sushirett med tekst under. Vi valgte å ha en blå boks rundt teksten slik at det skulle passe bedre overens med
+        resten av nettsiden og gi en mer rød tråd.
+        </p>
+        <p>
+          <b>Endringer på menysiden: </b> <br>
+          Funksjonaliteten og grovdesignet på nettsiden er slik vi planla den i P2. Endringene på denne siden er bare hvilke bilder vi har brukt som hovedbilde og bak hver rett.
+          Grunnen til at vi endret bildene er fordi at de nye bildene vi fant var av bedre kvalitet.
+         </p>
+         <p>
+          <b>Endringer på bestillingssiden: </b> <br>
+          På denne siden har vi gjort to endringer. Den ene endringen er at vi har lagt til alternative klokkeslett som gjester kan velge mellom. Dette dukker opp etter at en spesifikk dato er valgt på kalenderen.
+          Dette var fordi at det er naturlig at gjestene også skal kunne bestille bord til en spesifikk tid, noe vi ikke tenkte på når vi planla i P2.
+          <br><br>
+          Den andre endringen er selve skjemaet som dukker opp helt til slutt.
+          Her har vi gått fra blåfargen til en mer nøytral stil, der vi spør om "fornavn", "etternavn" hver for seg fremfor å spørre om fullt navn på et inputfelt. Årsaken til at vi tok bort blåfargen er fordi at det gjorde hele siden mer behagelig å se på. Det ble for mye blått når man hadde en blå kalender rett over et blått skjema.
+          Videre valgte vi å separere fornavn og etternavn, noe som gjorde at selve skjemaet passet bedre med siden og for at det skulle bli mer brukervennlig. Om vi valgte et felt med fullt navn, eller to felt med separate navn var egentlig det samme. Derfor gikk vi bare for en av løsningene.
+        </p>
+        <p>
+          <b>Endringer på "Om oss"-siden: </b> <br>
+          På denne siden endret vi hovedbildet, da det opprinnelige bildet var av dårlig kvalitet.
+          Andre endringer et at vi har lagt til et avsnitt og et bilde istedenfor et stort bilde nederst på siden. Vi valgte å gjøre dette fordi vi synes det ble for mye bilder på siden.
+          I tillegg tenkte vi det ville være praktisk for klienten at de kunne ha enda et felt med mer info om restauranten.
+          Vi syntes også at det matchet stilen til forsiden å gjøre det slik, og vi fikk derfor en slags rød tråd i designet på nettsiden.
+        </p>
+        <p>
+          <b>Endringer på javascriptfilene: </b> <br>
+          Vi har med funksjonaliteten som er planlagt i slider.js, men endret navn på filen til imageCarousel.js. Dette fordi at navnet er mer beskrivende til det scriptet gjør.
+          På del 2 tenkte vi å ha bestilleBord.js, som inneholdt all javascripten som trengtes på bestille bord. Etterhvert har vi valgt å dele opp dette til to js filer, nemlig calenderJavascript.js og form.js. calenderJavascript.js lager kalenderet, mens form.js validerer inneholder på skjemaet på bestillingssiden.
+          Vi følte at det ble mer ryddig kode dersom vi separerte disse to scriptene.
+          <br><br>
+          To andre script vi har lagt til er footer.js og navbar.js. Vi brukte litt stringmanipulering i javascript på navbaren og footeren som gjentok seg på alle sidene. Dette for å unngå å få repetativ HTML kode i alle html filene. Dersom vi skulle gjøre noen endringer så var det nok å gjøre endringene på et sted.
+          <br><br>
+          Vi hadde planlagt å inkludere en bestilleMat.js, men dette endte vi med å gå bort ifra. Å bestille mat hjem matchet ikke helt med konseptet vi hadde sett for oss allikevel.
+        </p>
+
+      </div>
+
+      <div class="child">
+        <h2>4. Oppdatert mappestruktur</h2>
+          <ul>
+            <li>forside.html</li>
+            <li>meny.html</li>
+            <li>omOss.html</li>
+            <li>reservasjon.html</li>
+            <li>style.css</li>
+            <li>js <ul>
+                    <li>calenderJavascript.js</li>
+                    <li>footer.js</li>
+                    <li>form.js</li>
+                    <li>imageCarousel.js</li>
+                    <li>navbar.js</li>
+                  </ul>
+
+            </li>
+            <li>img <ul>
+                      <li>forside
+                        <ul>
+                          <li>div1.jpg</li>
+                          <li>div2.jpg</li>
+                          <li>div3.jpg</li>
+                          <li>div4.jpg</li>
+                          <li>fisk1.jpg</li>
+                          <li>fisk2.jpg</li>
+                          <li>fisk3.jpg</li>
+                          <li>pasta1.jpg</li>
+                          <li>sushi1.jpg</li>
+                        </ul>
+                      </li>
+                      <li>ImageCarousel
+                        <ul>
+                          <li>food1.jpg</li>
+                          <li>food2.jpg</li>
+                          <li>food3.jpg</li>
+                          <li>food4.jpg</li>
+                        </ul>
+                      </li>
+                    <li>meny
+                      <ul>
+                        <li>dessertMeny.jpg</li>
+                        <li>forretMeny.jpg</li>
+                        <li>hovedbildeMeny.jpg</li>
+                        <li>hovedrettMeny.jpg</li>
+                      </ul>
+                    </li>
+                    <li>omOss
+                      <ul>
+                        <li>gronsaker1.jpg</li>
+                        <li>staff.jpg</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+
+      </div>
+
+      <div class="child">
+
+        <h2>5. Minstekravene</h2>
+        <p>Vi har imageCarousel.js, form.js og calenderJavascript.js for å møte minstekravet. I samråd med vår studass Benedicte, vil koden i
+          calenderJavascript.js telles som to javascript funksjoner, og med bildekarusellen og formvalideringen har vi da møtt minstekravet med 4
+          javascriptfunksjoner.
+          Hedda validerte skjemaet under bestillingen i reservasjon.html med form.js. Haidar i reservasjon.html med calenderJavascript.js. Ole lagde
+          slide showet på forsiden (index.html) med imageCarousel.js
+       </p>
+
+      </div>
+
+      <div class="child">
+        <h2>6. Endelig arbeidsfordeling</h2>
+        <table>
+          <tr>
+            <th>filnavn</th>
+            <th>beskrivelse</th>
+            <th>ansvar</th>
+          </tr>
+          <tr>
+            <td>forside.html</td>
+            <td>Forsiden</td>
+            <td>Hedda, Haidar, Ole</td>
+          </tr>
+          <tr>
+            <td>meny.html</td>
+            <td>Menysiden</td>
+            <td>Simen</td>
+          </tr>
+          <tr>
+            <td>omOss.html</td>
+            <td>Om oss siden</td>
+            <td>Haidar og Hedda</td>
+          </tr>
+          <tr>
+            <td>reservasjon.html</td>
+            <td>Reservasjonssiden</td>
+            <td>Haidar og Hedda</td>
+          </tr>
+          <tr>
+            <td>imageCarousel.js</td>
+            <td>Bildene som roterer på forsiden</td>
+            <td>Ole</td>
+          </tr>
+          <tr>
+            <td>calenderJavascript.js</td>
+            <td>Knappene for antall gjester, kalender og klokkeslettene.</td>
+            <td>Haidar</td>
+          </tr>
+          <tr>
+            <td>form.js</td>
+            <td>Validering av skjemaet under bestillingen. </td>
+            <td>Hedda</td>
+          </tr>
+          <tr>
+            <td>navbar.js</td>
+            <td>Øverste delen av alle nettisdene skrevet med stringmanipulering i javascript</td>
+            <td>Hedda, Haidar, Ole</td>
+          </tr>
+          <tr>
+            <td>footer.js</td>
+            <td>Nederste delen av alle nettisdene skrevet med stringmanipulering i javascript</td>
+            <td>Hedda, Haidar, Ole</td>
+          </tr>
+          <tr>
+            <td>style.css</td>
+            <td>Stil på siden</td>
+            <td>Alle sammen</td>
+          </tr>
+          <tr>
+            <td>Siste gjennomgang</td>
+            <td>Gjennomgår nettsiden for feil på siden og i koden.</td>
+            <td>Hedda, Haidar</td>
+          </tr>
+        </table>
+
+    </div>
+  </div>
+
+
+  </body>
+</html>
